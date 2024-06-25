@@ -1,0 +1,9 @@
+name: Demo Workflow
+
+on: [workflow_dispatch]
+
+jobs:
+  demo-job-1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello Lego"
