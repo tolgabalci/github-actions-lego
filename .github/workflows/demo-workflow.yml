@@ -6,4 +6,7 @@ jobs:
   demo-job-1:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello Lego"
+      - uses: action/checkout@v4
+      - run: |
+          echo "Hello Lego"
+          echo "This is from the training"
